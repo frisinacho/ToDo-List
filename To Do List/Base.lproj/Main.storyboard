@@ -42,6 +42,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="toDoListTable" destination="WWa-aV-Jri" id="USP-7N-Plf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,6 +84,9 @@
                                     <constraint firstAttribute="height" constant="30" id="bjU-p3-i9q"/>
                                 </constraints>
                                 <state key="normal" title="Add Item"/>
+                                <connections>
+                                    <action selector="addItem:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="AMg-dO-Svx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -96,6 +102,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="item" destination="EBd-GS-zbW" id="nJc-6g-JBs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

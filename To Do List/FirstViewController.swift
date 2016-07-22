@@ -12,7 +12,7 @@ var toDoList = [String]()
 
 class FirstViewController: UIViewController, UITableViewDelegate {
     
-    @IBOutlet var toDoListTable: UIView!
+    @IBOutlet var toDoListTable: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +38,10 @@ class FirstViewController: UIViewController, UITableViewDelegate {
         return cell
     }
 
+    override func viewDidAppear(animated: Bool) {
+        
+        toDoListTable.reloadData()
+    }
 
 }
 

@@ -8,6 +8,8 @@
 
 import UIKit
 
+var toDoList = [String]()
+
 class FirstViewController: UIViewController {
     
     @IBOutlet var toDoListTable: UIView!
